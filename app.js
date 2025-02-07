@@ -23,3 +23,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     cards.forEach(card=>observer.observe(card))
 })
 
+let scrollToTop = document.getElementById("scrollToTop")
+
+window.addEventListener("scroll",()=>{
+    if(window.scrollY > 300){
+        scrollToTop.classList.remove("d-none")
+    }else{
+        scrollToTop.classList.add("d-none")
+    }
+})
+
+scrollToTop.addEventListener("click", ()=>window.scrollTo({top:0,behavior:'smooth'}))
+

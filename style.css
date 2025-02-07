@@ -21,9 +21,27 @@
     
 }
 .card{
-    width: 550px;
-    height: 100px;
+    width: 50%;
+    height: 90px;
     background-color: rgb(121, 233, 241);
     border-radius: 10px;
     color: black;
+}
+h1{
+    text-align: center;
+}
+.scroll{
+    background-color: rgba(173, 255, 47,0.7);
+    padding: 1.5%;
+    width: 60px;
+    text-align: center;
+    height: 70px;
+    border-radius: 40%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
